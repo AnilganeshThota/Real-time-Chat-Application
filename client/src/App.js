@@ -57,7 +57,6 @@
 // export default App;
 
 import { useEffect, useRef, useState } from 'react';
-import { io } from "socket.io-client";
 import './App.css';
 
 const username = prompt('Enter your name');
@@ -76,7 +75,7 @@ function App() {
   useEffect(() => {
     if (socketRef.current) return; // prevent duplicate connections
   
-    const socket = io("https://real-time-chat-application-buwp.onrender.com");
+    const socket = new WebSocket("wss://real-time-chat-application-buwp.onrender.com");
     socketRef.current = socket;
   
     socket.onopen = () => {
