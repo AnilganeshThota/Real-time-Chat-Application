@@ -2,7 +2,6 @@
   "name": "client",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://AnilganeshThota.github.io/Real-time-Chat-Application",
 
   "dependencies": {
     "@testing-library/dom": "^10.4.1",
